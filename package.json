@@ -1,0 +1,9 @@
+{
+  "name": "sass-startend",
+  "version": "1.0.0",
+  "description": "Handy mixins for bidirectional css inspired by flex-start & flex-end behavior.",
+  "main": "index.js",
+  "repository": "https://cdes@github.com/cdes/sass-startend.git",
+  "author": "Ahmed Al Haddad <ahmed.hdd@gmail.com>",
+  "license": "MIT"
+}
