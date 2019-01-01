@@ -1,0 +1,130 @@
+$start: left
+$end: right
+  
+=ltr
+  html[dir='ltr'] &
+    @content
+
+=rtl
+  html[dir='rtl'] &
+    @content
+
+=padding($paddingTop, $paddingEnd, $paddingBottom, $paddingStart)
+  padding-top: $paddingTop
+  padding-bottom: $paddingBottom
+  +ltr
+    padding-#{$start}: $paddingStart
+    padding-#{$end}: $paddingEnd
+  +rtl
+    padding-#{$start}: $paddingEnd
+    padding-#{$end}: $paddingStart
+
+=margin($marginTop, $marginEnd, $marginBottom, $marginStart)
+  margin-top: $marginTop
+  margin-bottom: $marginBottom
+  +ltr
+    margin-#{$start}: $marginStart
+    margin-#{$end}: $marginEnd
+  +rtl
+    margin-#{$start}: $marginEnd
+    margin-#{$end}: $marginStart
+
+=padding-start($value)
+  +ltr
+    padding-#{$start}: $value
+    padding-#{$end}: auto
+  +rtl
+    padding-#{$start}: auto
+    padding-#{$end}: $value
+
+=padding-end($value)
+  +ltr
+    padding-#{$start}: auto
+    padding-#{$end}: $value
+  +rtl
+    padding-#{$start}: $value
+    padding-#{$end}: auto
+
+=margin-start($value)
+  +ltr
+    margin-#{$start}: $value
+    margin-#{$end}: auto
+  +rtl
+    margin-#{$start}: auto
+    margin-#{$end}: $value
+
+=margin-end($value)
+  +ltr
+    margin-#{$start}: auto
+    margin-#{$end}: $value
+  +rtl
+    margin-#{$start}: $value
+    margin-#{$end}: auto
+
+=start($value)
+  +ltr
+    #{$start}: $value
+    #{$end}: auto
+  +rtl
+    #{$start}: auto
+    #{$end}: $value
+
+=end($value)
+  +ltr
+    #{$start}: auto
+    #{$end}: $value
+  +rtl
+    #{$start}: $value
+    #{$end}: auto
+
+=text-align($value)
+  @if $value == 'start'
+    +ltr
+      text-align: $start
+    +rtl
+      text-align: $end
+  @elseif $value == 'end'
+    +ltr
+      text-align: $end
+    +rtl
+      text-align: $start
+
+=border-start($value)
+  +ltr
+    border-#{$start}: $value
+    border-#{$end}: auto
+  +rtl
+    border-#{$start}: auto
+    border-#{$end}: $value
+
+=border-end($value)
+  +ltr
+    border-#{$start}: auto
+    border-#{$end}: $value
+  +rtl
+    border-#{$start}: $value
+    border-#{$end}: auto
+
+=border-radius($topStart, $topEnd, $bottomEnd, $bottomStart)
+  +ltr
+    border-top-#{$start}-radius: $topStart
+    border-top-#{$end}-radius: $topEnd
+    border-bottom-#{$end}-radius: $bottomEnd
+    border-bottom-#{$start}-radius: $bottomStart
+  +rtl
+    border-top-#{$end}-radius: $topStart
+    border-top-#{$start}-radius: $topEnd
+    border-bottom-#{$start}-radius: $bottomEnd
+    border-bottom-#{$end}-radius: $bottomStart
+
+=transform-translate($x, $y)
+  +ltr
+    transform: translate($x * 1, $y)
+  +rtl
+    transform: translate($x * -1, $y)
+
+=transform-translateX($value)
+  +ltr
+    transform: translateX($value * 1)
+  +rtl
+    transform: translateX($value * -1)

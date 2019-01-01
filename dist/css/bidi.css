@@ -1,0 +1,89 @@
+div {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0; }
+  html[dir='ltr'] div {
+    padding-left: 5px;
+    padding-right: 10px; }
+  html[dir='rtl'] div {
+    padding-left: 10px;
+    padding-right: 5px; }
+  html[dir='ltr'] div {
+    margin-left: 5px;
+    margin-right: 10px; }
+  html[dir='rtl'] div {
+    margin-left: 10px;
+    margin-right: 5px; }
+  html[dir='ltr'] div {
+    padding-left: 5px;
+    padding-right: auto; }
+  html[dir='rtl'] div {
+    padding-left: auto;
+    padding-right: 5px; }
+  html[dir='ltr'] div {
+    padding-left: auto;
+    padding-right: 10px; }
+  html[dir='rtl'] div {
+    padding-left: 10px;
+    padding-right: auto; }
+  html[dir='ltr'] div {
+    margin-left: 5px;
+    margin-right: auto; }
+  html[dir='rtl'] div {
+    margin-left: auto;
+    margin-right: 5px; }
+  html[dir='ltr'] div {
+    margin-left: auto;
+    margin-right: 10px; }
+  html[dir='rtl'] div {
+    margin-left: 10px;
+    margin-right: auto; }
+  html[dir='ltr'] div {
+    left: 5px;
+    right: auto; }
+  html[dir='rtl'] div {
+    left: auto;
+    right: 5px; }
+  html[dir='ltr'] div {
+    left: auto;
+    right: 10px; }
+  html[dir='rtl'] div {
+    left: 10px;
+    right: auto; }
+  html[dir='ltr'] div {
+    text-align: left; }
+  html[dir='rtl'] div {
+    text-align: right; }
+  html[dir='ltr'] div {
+    border-left: 5px;
+    border-right: auto; }
+  html[dir='rtl'] div {
+    border-left: auto;
+    border-right: 5px; }
+  html[dir='ltr'] div {
+    border-left: auto;
+    border-right: 5px; }
+  html[dir='rtl'] div {
+    border-left: 5px;
+    border-right: auto; }
+  html[dir='ltr'] div {
+    border-top-left-radius: 1px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 4px; }
+  html[dir='rtl'] div {
+    border-top-right-radius: 1px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 4px; }
+  html[dir='ltr'] div {
+    transform: translate(10px, 5px); }
+  html[dir='rtl'] div {
+    transform: translate(-10px, 5px); }
+  html[dir='ltr'] div {
+    transform: translateX(10px); }
+  html[dir='rtl'] div {
+    transform: translateX(-10px); }
+
+/*# sourceMappingURL=bidi.css.map */

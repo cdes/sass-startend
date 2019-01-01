@@ -5,5 +5,11 @@
   "main": "index.js",
   "repository": "https://cdes@github.com/cdes/sass-startend.git",
   "author": "Ahmed Al Haddad <ahmed.hdd@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "sass": "node-sass --source-map true src/sass/*.sass -o dist/css"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
 }

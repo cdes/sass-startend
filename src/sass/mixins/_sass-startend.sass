@@ -1,0 +1,71 @@
+$start: left
+$end: right
+$inverse-multiplier: 1
+
+@if $direction == rtl
+  $start: right
+  $end: left
+  $inverse-multiplier: -1
+
+=direction
+  direction: $direction
+
+=padding($paddingTop, $paddingEnd, $paddingBottom, $paddingStart)
+  padding-#{$start}: $paddingStart
+  padding-#{$end}: $paddingEnd
+  padding-top: $paddingTop
+  padding-bottom: $paddingBottom
+
+=margin($marginTop, $marginEnd, $marginBottom, $marginStart)
+  margin-#{$start}: $marginStart
+  margin-#{$end}: $marginEnd
+  margin-top: $marginTop
+  margin-bottom: $marginBottom
+
+=padding-start($value)
+  padding-#{$start}: $value
+
+=padding-end($value)
+  padding-#{$end}: $value
+
+=margin-start($value)
+  margin-#{$start}: $value
+
+=margin-end($value)
+  margin-#{$end}: $value
+
+=start($value)
+  #{$start}: $value
+
+=end($value)
+  #{$end}: $value
+
+=text-align($value)
+  @if $value == 'start'
+    text-align: $start
+  @elseif $value == 'end'
+    text-align: $end
+
+=border-start($value)
+  border-#{$start}: $value
+
+=border-end($value)
+  border-#{$end}: $value
+
+=border-radius($topStart, $topEnd, $bottomEnd, $bottomStart)
+  border-top-#{$start}-radius: $topStart
+  border-top-#{$end}-radius: $topEnd
+  border-bottom-#{$end}-radius: $bottomEnd
+  border-bottom-#{$start}-radius: $bottomStart
+
+@function _translate($x, $y)
+  @return translate($x * $inverse-multiplier, $y)
+
+@function _translateX($value)
+  @return translateX($value * $inverse-multiplier)
+
+=transform-translate($x, $y)
+  transform: translate($x * $inverse-multiplier, $y)
+
+=transform-translateX($value)
+  transform: translateX($value * $inverse-multiplier)
