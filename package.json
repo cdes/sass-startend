@@ -7,7 +7,10 @@
   "author": "Ahmed Al Haddad <ahmed.hdd@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "sass": "node-sass --source-map true src/sass/*.sass -o dist/css"
+    "sass": "yarn rtl && yarn ltr && yarn bidi",
+    "rtl": "node-sass --source-map true src/sass/rtl.sass -o dist/css",
+    "ltr": "node-sass --source-map true src/sass/ltr.sass -o dist/css",
+    "bidi": "node-sass --source-map true src/sass/bidi.sass -o dist/css"
   },
   "devDependencies": {
     "node-sass": "^4.9.0"
