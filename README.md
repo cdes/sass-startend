@@ -4,9 +4,7 @@
 
 <hr/>
 
-<h3> Code Demo </h3>
-
-Input
+ℹ️ Input
 ```sass
 div
   +padding-start(5px)
@@ -15,7 +13,7 @@ div
   +margin-end(10px)
 ```
 
-Output: ltr
+🅾️ Output: ltr
 ```css
 div {
   padding-left: 5px;
@@ -25,7 +23,7 @@ div {
 }
 ```
 
-Output: rtl
+🅾️ Output: rtl
 ```css
 div {
   padding-right: 5px;
@@ -35,7 +33,7 @@ div {
 }
 ```
 
-Output: bidi
+🅾️ Output: bidi
 ```css
 html[dir='ltr'] div {
   padding-left: 5px;
