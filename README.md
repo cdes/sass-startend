@@ -1,4 +1,4 @@
-<h1 align="center"> SASS Startend - Bidirectional CSS</h1>
+# SASS Startend - Bidirectional CSS
 
 <p align="center"> Handy mixins for bidirectional css inspired by flex-start &amp; flex-end behavior. </p>
 
@@ -56,13 +56,13 @@ html[dir='rtl'] div {
 }
 ```
 
-<h3> Installation </h3>
+### Installation
 
 ```shell
 $ yarn add sass-startend
 ```
 
-<h3> Usage </h3>
+### Usage
 
 To produce a single CSS for both LTR & RTL (You must specifiy direction in your html `<html dir="rtl">`):
 ```sass
@@ -91,10 +91,12 @@ $direction: ltr;
 // Your sass here
 ```
 
+### Still confused?
+
 <p>
-Still confused? Take a look at bidi.sass, ltr.sass & rtl.sass in this repo.
+Take a look at bidi.sass, ltr.sass & rtl.sass in this repo.
 </p>
 
-<h3>License</h3>
+### License
 
 This project is licensed under the MIT License
