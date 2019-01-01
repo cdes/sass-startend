@@ -8,9 +8,9 @@
   "license": "MIT",
   "scripts": {
     "sass": "yarn rtl && yarn ltr && yarn bidi",
-    "rtl": "node-sass --source-map true src/sass/rtl.sass -o dist/css",
-    "ltr": "node-sass --source-map true src/sass/ltr.sass -o dist/css",
-    "bidi": "node-sass --source-map true src/sass/bidi.sass -o dist/css"
+    "rtl": "node-sass --source-map true sass/rtl.sass -o css/",
+    "ltr": "node-sass --source-map true sass/ltr.sass -o css/",
+    "bidi": "node-sass --source-map true sass/bidi.sass -o css/"
   },
   "devDependencies": {
     "node-sass": "^4.9.0"
